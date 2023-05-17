@@ -81,7 +81,7 @@ class General extends Component {
                 <label htmlFor="phone">Phone Number</label>
                 <input id='phone' type="tel" onChange={this.handleChangePhone} value={info.phone}/>
                 
-                <button type='submit'>submit or edit</button>
+                <button className="button-1" type='submit'>submit or edit</button>
 
 
             </form>

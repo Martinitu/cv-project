@@ -14,7 +14,7 @@ const  OverviewEducation = (props) => {
                          <li>{info.titleStudy}</li>
                          <li> {info.date}</li> 
                         
-                        <button>edit</button>
+                        <button className="button-1">edit</button>
                         </ul>
                     )
         })}

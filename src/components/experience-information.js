@@ -119,8 +119,8 @@ class Experience extends Component {
                 <input id='startDate' type="date" onChange={this.handleChangeStartDate} value={info.startDate}/>
                 <label htmlFor="endDate"> End Date</label>
                 <input id='endDate' type="date" onChange={this.handleChangeEndDate} value={info.endDate}/>
-                <button>edit</button>
-                <button type='submit'>submit</button>
+                
+                <button className="button-1" type='submit'>submit</button>
 
 
             </form>

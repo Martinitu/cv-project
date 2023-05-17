@@ -15,7 +15,7 @@ const  OverviewExperience = (props) => {
                         <li>{info.mainTask}</li>
                         <li> {info.startDate} </li>
                         <li>{info.endDate}</li> 
-                        <button>edit</button>
+                        <button className="button-1">edit</button>
                         </ul>
                     )
         })}
