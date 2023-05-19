@@ -124,7 +124,16 @@ class Experience extends Component {
 
 
             </form>
+            <div className="experienceInfoDiv">
+            <ul className='infoTitleExperience'>
+                        <li>Company Name</li>
+                         <li>Position</li>
+                         <li>Role</li> 
+                         <li>Start Date</li>
+                         <li>End Date</li>
+              </ul>
             <OverviewExperience infoArr={infoArr} />
+            </div>
 
         </div>
 

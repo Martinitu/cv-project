@@ -9,12 +9,12 @@ const  OverviewEducation = (props) => {
       {infoArr.map((info) => {
        
             return  (
-                        <ul key={info.id}>
+                        <ul className='infoSchool' key={info.id}>
                         <li>{info.schoolName}</li>
                          <li>{info.titleStudy}</li>
                          <li> {info.date}</li> 
                         
-                        <button className="button-1">edit</button>
+                        <button className="button-1">erase</button>
                         </ul>
                     )
         })}

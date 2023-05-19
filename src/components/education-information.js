@@ -79,7 +79,14 @@ class Education extends Component {
 
 
             </form>
-            <OverviewEducation infoArr={infoArr} />    
+            <div className="educationInfoDiv">
+            <ul className='infoTitle'>
+                        <li>School Name</li>
+                         <li>Title of Study</li>
+                         <li>Date</li> 
+              </ul>
+            <OverviewEducation infoArr={infoArr} /> 
+            </div>   
 
         </div>
 

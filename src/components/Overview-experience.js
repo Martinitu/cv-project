@@ -9,13 +9,13 @@ const  OverviewExperience = (props) => {
       {infoArr.map((info) => {
        
             return  (
-                       <ul key={info.id}>
+                       <ul className='infoExperience' key={info.id}>
                         <li >{info.companyName} </li>
                         <li>{info.position} </li>
                         <li>{info.mainTask}</li>
                         <li> {info.startDate} </li>
                         <li>{info.endDate}</li> 
-                        <button className="button-1">edit</button>
+                        <button className="button-1">erase</button>
                         </ul>
                     )
         })}

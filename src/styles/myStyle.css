@@ -6,23 +6,104 @@ body {
 
 .appTitle {
     font-size: 50px;
+    color: #EA4C89;
 }
 
 .general {
     background-color: #b6b7d5;
     display: flex;
     flex-direction: row;
+    color: azure;
+ 
+}
+
+.generalInfo {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+}
+
+.generalInfoDIv{
+    display: flex;
+  
+}
+
+.generalInfoDIv h2 {
+    color: #fed59a;
+    margin: 20px;
 }
 .education{
     background-color: #9698c3;
     display: flex;
     flex-direction: row;
 }
+.infoTitle {
+    width: 80%;
+   border-radius: 5px;
+   
+}
+.infoTitle li {
+    color: white;
+    height: 10%;
+    width: 24%;
+    font-size: 20px;
+    font-weight: 700;
+   
+}
+.educationInfoDiv {
+    display: grid;
+     width: 90%;
+     grid-template-columns: 1fr;
+     
+   
+}
+.infoSchool {
+    width: 80%;
+    border-radius: 5px;
+}
+.infoSchool li {
+    width: 25%;
+    background-color: #feb9e2;
+    color: #2b3cbb;
+    height: 20%;
+    font-size: 15px;
+}
 .experience {
 
     background-color: #777aaf;
     display: flex;
     flex-direction: row;
+}
+.experienceInfoDiv {
+    display: grid;
+    width: 90%;
+    grid-template-columns: 1fr;
+       
+}
+.infoTitleExperience {
+    width: 80%;
+   border-radius: 5px;
+   
+}
+.infoTitleExperience li {
+    color: white;
+    height: 10%;
+    width: 24%;
+    font-size: 20px;
+    font-weight: 700;
+   
+}
+.infoExperience {
+    width: 87%;
+    border-radius: 5px;
+}
+.infoExperience li {
+    width: 27%;
+    background-color: #feb9e2;
+    color: #2b3cbb;
+    height: 20%;
+    font-size: 15px;
 }
 
 form {
@@ -32,16 +113,18 @@ form {
     margin-left: 30px ;
     margin-right: 50px;
     padding: 10px;
-
 }
 
 ul {
     background-color: #fd89ce;
     display: flex;
     flex-direction: row;
-
 }
+
 li {
+    border-radius: 5px;
+    height: 10%;
+    margin: 5px;
     list-style: none;
    padding: 20px;
 }
