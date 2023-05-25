@@ -1,8 +1,78 @@
-import React, { Component } from 'react';
+import React, {  useState } from 'react';
 import uniquid from "uniqid";
 import OverviewGeneral from "./Overview-general"
 
-class General extends Component {
+const General = () => {
+  const [info, setInfo] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    id:uniquid()
+}
+);
+const [infoArr, setinfoArr] = useState([])
+
+
+  const handleChangeName = (e) => {
+        
+   setInfo({
+    name: e.target.value,
+    email: info.email,
+    phone: info.phone,
+    id: info.id
+  });
+  };
+  const handleChangeEmail = (e) => {
+        
+    setInfo({
+      name: info.name,
+      email: e.target.value,
+      phone: info.phone,
+      id: info.id
+     
+    });
+   };
+   const handleChangePhone = (e) => {
+        
+    setInfo({
+      name: info.name,
+      email: info.email,
+      phone: e.target.value,
+      id: info.id
+    });
+   };
+   const onSubmitInfo = (e) => {
+    e.preventDefault();
+    
+   setinfoArr(info);
+   };
+   return(
+    <div className="general">
+        
+        <form className="generalForm" onSubmit={onSubmitInfo}>
+            <label htmlFor="name">Name</label>
+            <input id='name' type="text" onChange={handleChangeName} value={info.name}/>
+            <label htmlFor="email">Email</label>
+            <input id='email' type="email" onChange={handleChangeEmail} value={info.email}/>
+            <label htmlFor="phone">Phone Number</label>
+            <input id='phone' type="tel" onChange={handleChangePhone} value={info.phone}/>
+            
+            <button className="button-1" type='submit'>submit or edit</button>
+
+
+        </form>
+        <OverviewGeneral infoArr={infoArr} />
+
+
+    </div>
+
+    )
+  
+};
+
+
+
+/*class General extends Component {
     constructor() {
         super();
         this.state = {
@@ -64,6 +134,8 @@ class General extends Component {
       infoArr: this.state.info,
       
     });
+    
+
   };
 
 
@@ -92,5 +164,5 @@ class General extends Component {
 
         )}
 }; 
-
+*/
 export default General;
